@@ -1,0 +1,12 @@
+# ansible-lint -L to see all rules
+warn_list:
+    - meta-no-info
+    - yaml[line-length]
+skip_list:  
+  - meta-incorrect
+  # metadata/201 - Trailing whitespace
+  - '201'
+  # metadata/701 - Role info should contain platforms
+  - '701'
+  # metadata/703 - Should change default metadata: <field>"
+  - '703'

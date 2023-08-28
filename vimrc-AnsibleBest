@@ -1,0 +1,40 @@
+set et ts=2 ai sw=2 nu
+set nu " show line number
+set tabstop=4
+set et
+" set cuc
+
+" syntax on
+
+
+" colorscheme desert
+" colorscheme monokai 
+
+
+autocmd FileType yaml setlocal et ts=2 ai sw=2 nu sts=0
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
+
+nnoremap <F2> :set nonumber!<CR>  " toggle number
+nnoremap <F3> :set cursorline! cursorcolumn!<CR>
+
+call plug#begin()
+ Plug 'Yggdroot/indentLine'
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
+
+ Plug 'sonph/onehalf', { 'rtp': 'vim' }
+call plug#end()
+
+" let g:airline_solarized_bg='light'
+
+syntax on
+set t_Co=256
+set cursorline
+
+colorscheme onehalfdark
+" colorscheme onehalflight
+let g:airline_theme='onehalfdark'
+" lightline
+" let g:lightline = { 'colorscheme': 'onehalfdark' }
