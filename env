@@ -1,0 +1,28 @@
+#  needed for galaxy
+export HTTPS_PROXY=http://proxyanycast2.rabonet.com:9443
+export https_proxy=http://proxyanycast2.rabonet.com:9443
+export HTTP_PROXY=http://proxyanycast2.rabonet.com:9443
+export http_proxy=http://proxyanycast2.rabonet.com:9443
+export NO_PROXY=rabonet.com,rabodev.com,rabodmz.com,rabotest.com,rabobank.nl,rabobank.corp,rabobank.com,rabobankgroep.corp,rabobankgroeptest.corp,rabotestdmz.com,rabobanktest.corp,rabosvc.com,localhost
+export no_proxy=rabonet.com,rabodev.com,rabodmz.com,rabotest.com,rabobank.nl,rabobank.corp,rabobank.com,rabobankgroep.corp,rabobankgroeptest.corp,rabotestdmz.com,rabobanktest.corp,rabosvc.com,localhost
+export HTTPS_PROXY https_proxy HTTP_PROXY http_proxy NO_PROXY no_proxy
+
+
+alias vi='vim'
+
+source venv/bin/activate
+
+#source /usr/share/git-core/contrib/completion/git-prompt.sh
+#GIT_PS1_SHOWDIRTYSTATE=true
+#GIT_PS1_SHOWUNTRACKEDFILES=true
+#PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
+
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+
+PS1='\[\e]0;\u@\h: \w\a\]\[\033[;94m\]┌─`__git_ps1`───${VIRTUAL_ENV:+(\[\033[0;1m\]$(basename $VIRTUAL_ENV)\[\033[;94m\])}(\[\033[1;31m\]\u㉿\h\[\033[;94m\])-[\[\033[0;1m\]\w\[\033[;94m\]]\n\[\033[;94m\]└─\[\033[1;31m\]\$\[\033[0m\] '
+
+alias ll='ls -l --color=never' 2>/dev/null
+
+export XDG_CONFIG_HOME=~/harry/.config/yamllint/config
