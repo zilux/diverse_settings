@@ -1,0 +1,9 @@
+---
+ansible-navigator:
+  execution-environment:
+    image: hub.qrom.nl/ee-supported-rhel8
+    pull:
+      policy: missing
+  mode: stdout
+  playbook-artifact:
+    enable: false
